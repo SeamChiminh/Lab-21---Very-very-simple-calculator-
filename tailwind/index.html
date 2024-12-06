@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Calculator</title>
+</head>
+<body class="bg-gray-300">
+  <div class="bg-gray-800 p-6 rounded-xl shadow-2xl">
+    <div id="display" class="bg-black text-white text-right text-3xl font-mono h-20 rounded-lg p-4 overflow-hidden">0</div>
+    
+    <div class="grid grid-cols-4 gap-2 mt-4">
+      <button class="bg-orange-500 text-white text-xl font-bold rounded-lg py-4" onclick="Operator('*')">*</button>
+      <button class="bg-orange-500 text-white text-xl font-bold rounded-lg py-4" onclick="Operator('/')">/</button>
+      <button class="bg-orange-500 text-white text-xl font-bold rounded-lg py-4" onclick="Operator('-')">-</button>
+      <button class="bg-orange-500 text-white text-xl font-bold rounded-lg py-4" onclick="Operator('+')">+</button>
+
+      <button class="bg-gray-300 text-xl font-bold rounded-lg py-4" onclick="Number(9)">9</button>
+      <button class="bg-gray-300 text-xl font-bold rounded-lg py-4" onclick="Number(8)">8</button>
+      <button class="bg-gray-300 text-xl font-bold rounded-lg py-4" onclick="Number(7)">7</button>
+      <button class="bg-gray-300 text-xl font-bold rounded-lg py-4" onclick="Number(6)">6</button>
+      
+      <button class="bg-gray-300 text-xl font-bold rounded-lg py-4" onclick="Number(5)">5</button>
+      <button class="bg-gray-300 text-xl font-bold rounded-lg py-4" onclick="Number(4)">4</button>
+      <button class="bg-gray-300 text-xl font-bold rounded-lg py-4" onclick="Number(3)">3</button>
+      <button class="bg-gray-300 text-xl font-bold rounded-lg py-4" onclick="Number(2)">2</button>
+      <button class="bg-gray-300 text-xl font-bold rounded-lg py-4" onclick="Number(1)">1</button>
+      <button class="bg-gray-300 text-xl font-bold rounded-lg py-4" onclick="Number(0)">0</button>
+
+      <button class="bg-gray-300 text-xl font-bold rounded-lg py-4" onclick="appendDot()">.</button>
+      <button class="bg-green-700 text-white text-xl font-bold rounded-lg py-4" onclick="calculate()">=</button>
+      <button class="bg-red-700 text-white text-xl font-bold rounded-lg py-4" onclick="clearDisplay()">C</button>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>

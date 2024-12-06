@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <title>Calculator</title>
+</head>
+<body>
+  <div class="container">
+    <div class="bg-dark p-4 rounded-xl shadow-lg">
+      <div id="display" class="btn-secondary text-white text-right display-4 font-mono h-100 rounded-lg p-3 mb-3">0</div>
+      
+      <div class="row g-3">
+        <div class="col-3">
+          <button class="btn btn-warning btn-lg w-100 p-4 " onclick="Operator('*')">*</button>
+        </div>
+        <div class="col-3">
+          <button class="btn btn-warning btn-lg w-100 p-4 " onclick="Operator('/')">/</button>
+        </div>
+        <div class="col-3">
+          <button class="btn btn-warning btn-lg w-100 p-4" onclick="Operator('-')">-</button>
+        </div>
+        <div class="col-3">
+          <button class="btn btn-warning btn-lg w-100 p-4" onclick="Operator('+')">+</button>
+        </div>
+
+        <div class="col-3">
+          <button class="btn btn-light btn-lg w-100 p-4 mt-3" onclick="Number(9)">9</button>
+        </div>
+        <div class="col-3">
+          <button class="btn btn-light btn-lg w-100 p-4 mt-3" onclick="Number(8)">8</button>
+        </div>
+        <div class="col-3">
+          <button class="btn btn-light btn-lg w-100 p-4 mt-3" onclick="Number(7)">7</button>
+        </div>
+        <div class="col-3">
+          <button class="btn btn-light btn-lg w-100 p-4 mt-3" onclick="Number(6)">6</button>
+        </div>
+        
+        <div class="col-3">
+          <button class="btn btn-light btn-lg w-100 p-4 mt-3" onclick="Number(5)">5</button>
+        </div>
+        <div class="col-3">
+          <button class="btn btn-light btn-lg w-100 p-4 mt-3" onclick="Number(4)">4</button>
+        </div>
+        <div class="col-3">
+          <button class="btn btn-light btn-lg w-100 p-4 mt-3" onclick="Number(3)">3</button>
+        </div>
+        <div class="col-3">
+          <button class="btn btn-light btn-lg w-100 p-4 mt-3" onclick="Number(2)">2</button>
+        </div>
+        <div class="col-3">
+          <button class="btn btn-light btn-lg w-100 p-4 mt-3" onclick="Number(1)">1</button>
+        </div>
+        <div class="col-3">
+          <button class="btn btn-light btn-lg w-100 p-4 mt-3" onclick="Number(0)">0</button>
+        </div>
+
+        <div class="col-3">
+          <button class="btn btn-light btn-lg w-100 p-4 mt-3" onclick="appendDot()">.</button>
+        </div>
+        <div class="col-3">
+          <button class="btn btn-success btn-lg w-100 p-4 mt-3" onclick="calculate()">=</button>
+        </div>
+        <div class="col-3">
+          <button class="btn btn-danger btn-lg w-100 p-4 mt-3" onclick="clearDisplay()">C</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
